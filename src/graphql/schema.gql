@@ -1,0 +1,14 @@
+type Proyecto {
+  nombre: String!
+  pomoros: [Pomoro] @relation
+}
+
+type Pomoro {
+  texto: String
+  fecha: Date!
+  proyecto: Proyecto!
+}
+
+type Query {
+  allProyectos: [Proyecto!]
+}
