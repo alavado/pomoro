@@ -27,8 +27,9 @@ const netlifyAuth = {
 const App = () => {
 
   const login = () => {
-    netlifyAuth.authenticate(() => {
-      this.setState({ redirectToReferrer: true })
+    netlifyAuth.authenticate(user => {
+      console.log({user})
+      // this.setState({ redirectToReferrer: true })
     })
   }
 
