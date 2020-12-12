@@ -1,1 +1,10 @@
-A ver el tailwindcss.
+- poder crear nuevo proyecto
+- poder editar proyecto
+- poder pausar tomate
+- que al final del tomate se agregue al historial
+- que no se pueda cambiar de proyecto mientras corre un tomate
+- que se guarden las notas
+- definir metas
+- habilitar logros
+- mientras corre un tomate no se pueda cambiar de proyecto
+- slot machine

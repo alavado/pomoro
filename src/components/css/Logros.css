@@ -1,0 +1,38 @@
+.Logros__un_pomoro {
+  width: 2rem;
+  height: 1.7rem;
+  border-radius: 50% / 50%;
+  background:
+    radial-gradient(circle at 50% 10%, #B91C1C 0%, transparent 25%),
+    radial-gradient(circle at 25% 25%, #F87171 0%, #B91C1C 75%);
+  box-shadow: inset -2rem -.5rem 1rem -.5rem rgba(0, 0, 0, .1),
+  1rem 1rem -.5rem 1rem red;
+  position: relative;
+  filter: saturate(0%);
+}
+
+.Logros__un_pomoro::after {
+  position: absolute;
+  content: '';
+  background: linear-gradient(135deg, #22C55E, #22C55E 40%, #16A34A 60%, #15803D 65%);
+  width: .6rem;
+  height: .5rem;
+  left: 50%;
+  top: -.1rem;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-shadow: .05rem .1rem -.1rem .1rem rgba(0, 0, 0, .1);
+}
+
+.Logros__un_pomoro::before {
+  position: absolute;
+  content: '';
+  background: linear-gradient(45deg, #22C55E, #22C55E 40%, #16A34A 60%, #22C55E 65%);
+  width: .5rem;
+  height: .4rem;
+  left: calc(50% - .6rem);
+  top: -.1rem;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  box-shadow: .05rem .1rem -.1rem .1rem rgba(0, 0, 0, .1);
+}

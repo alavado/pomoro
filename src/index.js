@@ -9,10 +9,14 @@ import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
 import { ApolloProvider } from '@apollo/react-hooks'
 import token from './secret/fauna'
+import netlifyIdentity from 'netlify-identity-widget'
+
+window.netlifyIdentity = netlifyIdentity
+netlifyIdentity.init()
 
 const httpLink = createHttpLink({
   uri: 'https://graphql.fauna.com/graphql',
-});
+})
 
 const authLink = setContext((_, { headers }) => {
   return {
