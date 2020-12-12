@@ -22,7 +22,9 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: window.location.href.indexOf('localhost') > 0 ? token : process.env.FAUNA_SECRET
+      authorization: window.location.href.indexOf('localhost') > 0
+        ? token
+        : process.env.FAUNA_SECRET
     }
   }
 })
