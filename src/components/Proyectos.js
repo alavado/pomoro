@@ -12,11 +12,11 @@ const Proyectos = () => {
   }
 
   return (
-    <ul className="flex content-center pr-4">
+    <ul className="flex content-center mr-2">
       {data.allProyectos.data.map(proyecto => (
         <Link
           to={`/proyecto/${proyecto._id}`}
-          className="pl-8 text-gray-400 text-base"
+          className="px-4 text-gray-400 text-base hover:text-white"
           activeClassName="Proyectos__link_activo"
           key={proyecto._id}
         >

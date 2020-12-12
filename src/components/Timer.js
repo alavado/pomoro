@@ -29,13 +29,13 @@ const Timer = () => {
 
   return (
     <div className="p-8 flex flex-col content-center justify-center">
-      <p className="text-9xl">{tiempoString}</p>
+      <p className="text-9xl text-center">{tiempoString}</p>
       <button
         disabled={comenzo}
         onClick={iniciarTimer}
-        className="p-2 px-4 mt-4 bg-red-600 text-white rounded hover:bg-red-500 transition self-center"
+        className="p-2 px-4 mt-4 text-lg font-semibold bg-red-600 text-white rounded hover:bg-red-500 transition self-center"
       >
-        Comenzar
+        {comenzo ? 'Pausar pomoro' : 'Comenzar pomoro'}
       </button>
     </div>
   )

@@ -1,3 +1,6 @@
 .Proyectos__link_activo {
-  @apply text-white
+  @apply text-white;
+  @apply font-semibold;
+  @apply border-b-2;
+  @apply border-yellow-500;
 }
