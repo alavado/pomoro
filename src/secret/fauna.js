@@ -1,3 +1,0 @@
-const token = 'Basic Zm5BRDgwbVRkNUFDQU94OWpOa21ubUd5ZWluM1h2NjR6bUR6N2oyQzpwb21vcm86c2VydmVy'
-
-export default token

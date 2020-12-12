@@ -8,7 +8,6 @@ import { BrowserRouter } from 'react-router-dom'
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
 import { ApolloProvider } from '@apollo/react-hooks'
-import token from './secret/fauna'
 import netlifyIdentity from 'netlify-identity-widget'
 
 window.netlifyIdentity = netlifyIdentity
@@ -22,9 +21,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: window.location.href.indexOf('localhost') > 0
-        ? token
-        : process.env.FAUNA_SECRET
+      authorization: process.env.REACT_APP_FAUNA_SECRET
     }
   }
 })
